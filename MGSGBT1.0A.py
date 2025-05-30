@@ -164,7 +164,7 @@ async def send_main_menu(message: Message):
         "🤖 <b>MGSGBT 1.0 A</b> — набор чат‑ботов в одном интерфейсе.\n\n"
         "🧩 <b>Доступные модели:</b>\n"
         " • <b>GPT‑4o mini</b>\n\n"
-        "⚙️ Сейчас доступна только одна модель."
+        "⚙️ Сейчас доступна только одна модель. (уже выбрана по умолчанию)"
     )
     kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="GPT‑4o mini ✅", callback_data="noop")]])
     await message.answer(text, reply_markup=kb)
